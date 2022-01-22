@@ -7,7 +7,7 @@ const Landing = () => {
             <Navbar />
             <div style={{ marginTop: 100, display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <Text h1 style={{ fontSize: 60 }}>Generate better insights <span class="sketch-highlight">with AI</span></Text>
-                <Button width="30%">Upload data</Button>
+                <Button style={{ marginTop: 20 }} width="30%">Upload data</Button>
             </div>
         </>
     )

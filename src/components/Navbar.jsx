@@ -1,12 +1,15 @@
 import { Text } from "@geist-ui/core"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
         <div className="navbar">
-            <Text h3 className="nav-logo">Awesome AI</Text>
+            <Link style={{ color: "black", textDecoration: "none" }} to="/" className="nav-logo">
+                <Text h3>Awesome AI</Text>
+            </Link>
             <div className="nav-right">
-                <Text p className="nav-link">Projections</Text>
-                <Text p className="nav-link">Team</Text>
+                <Link style={{ textDecoration: "none", color: "black" }} to="/projections" className="nav-link">Projections</Link>
+                <Link style={{ textDecoration: "none", color: "black" }} to="/team" className="nav-link">Team</Link>
             </div>
         </div>
     )
